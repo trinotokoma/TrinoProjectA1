@@ -1,0 +1,21 @@
+<div [@fadeInOut]>
+  <h1>Heroes</h1>
+
+  <p *ngIf="!heroes"><em>Cargando Heroes de la BBDD...</em></p>
+
+  <table class='table' *ngIf="heroes">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let hero of heroes">
+        <td>{{ hero.id }}</td>
+        <td>{{ hero.name }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

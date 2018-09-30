@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+/*@import '~ng2-toasty/bundles/style.css';
+@import '~ng2-toasty/bundles/style-bootstrap.css';*/
+
+@import 'app/assets/styles/styles-vendor.css';
+
