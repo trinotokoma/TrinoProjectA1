@@ -12,6 +12,7 @@ import { AppComponent } from './components/app.component';
 import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { HeroesComponent } from './components/hero/heroes/heroes.component';
+import { ComboComponent } from './components/combo/combo.component';
 
 
 
@@ -29,7 +30,8 @@ import { HeroesComponent } from './components/hero/heroes/heroes.component';
     NavMenuComponent,
     HomeComponent,
     FetchDataComponent,
-    HeroesComponent
+    HeroesComponent,
+    ComboComponent
   ],
   providers: [{ provide: 'BASE_URL', useFactory: getBaseUrl }],
   bootstrap: [AppComponent]

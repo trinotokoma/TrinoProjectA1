@@ -1,0 +1,12 @@
+<h3> {{name}} says:</h3>
+<p>I, {{name}}, am at your service, {{masterName}}.</p>
+
+<h3> {{nameBinding}} says:</h3>
+<p>I, {{nameBinding}}, am at your service, {{masterNameBinding}}.</p>
+
+
+<select>
+  <option *ngFor="let hero of heroes" value= "{{ hero.id }}">
+    {{hero.name}}
+  </option>
+</select>

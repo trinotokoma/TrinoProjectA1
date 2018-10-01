@@ -12,10 +12,14 @@ import { HeroService } from '../../../services/hero.services';
 
 export class HeroesComponent implements OnInit {
   private heroes: Hero[];
+  public nameBinding: string;
+  public masterNameBinding: string;
 
   constructor(private heroService: HeroService) { }
 
   ngOnInit() {
+    this.nameBinding = "Ejemplo";
+    this.masterNameBinding = "Ejemplo Master";
     this.heroService.getHeroes().subscribe(heroes => this.heroes = heroes);
   }
 
